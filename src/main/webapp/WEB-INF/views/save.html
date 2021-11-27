@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Language: <span th:text="${setting.language}"></span></h2>
+<h2>Page Size: <span th:text="${setting.pageSize}"></span></h2>
+<h2>SpamFilter: <span th:if="${setting.isSpamFilter()}">Yes</span><span th:unless="${setting.isSpamFilter()}">No</span></h2>
+<h2>Signature: <span th:text="${setting.signature}"></span></h2>
+<h2></h2>
+
+</body>
+</html>
